@@ -4,7 +4,7 @@ services:
   teste-postgres-compose:
     image: postgres
     environment:
-      POSTGRES_USERNAME: "user1"
+      POSTGRES_USERNAME: "postgres"
       POSTGRES_PASSWORD: "Senha123"
     ports:
       - "15432:5432"
@@ -16,7 +16,7 @@ services:
   teste-pgadmin-compose:
     image: dpage/pgadmin4
     environment:
-      PGADMIN_DEFAULT_EMAIL: "crisosilva88@gmail.com"
+      PGADMIN_DEFAULT_EMAIL: "seu_email@gmail.com"
       PGADMIN_DEFAULT_PASSWORD: "Senha123"
     ports:
       - "16543:80"
